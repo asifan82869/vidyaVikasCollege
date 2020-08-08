@@ -1,0 +1,217 @@
+{% extends 'college/base.html' %}
+
+
+{% block title %}
+Syllabus | VIDYA VIKAS COLLEGE OF ARTS , SCIENCE AND COMMERECE
+{% endblock %}
+
+
+
+{% block content %}
+{% load static %}
+<!-- UNDER GRADUATE -->
+<section>
+    <div class="container mb-5 mt-5">
+        
+        <h2 class="text-center m-3">UNDER GRADUATE</h2>
+        <div class="row">
+            <!-- Science-->
+            <div class="col-md-4">
+                <h3 class="m-3">Science</h3>
+                <div id="accordion">
+                    <!--collaspe1-->
+                    <div class="card" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" style="color: black;">
+                                    B.Sc. (General)
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="ml-4">
+                                    <li> <a href="">FY</a> </li>
+                                    <li> <a href="">SY</a> </li>
+                                    <li> <a href="">TY</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--collaspe2-->
+                    <div class="card" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" style="color: black;">
+                                    B.Sc. (information technology)
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="ml-4">
+                                    <li> <a href="{% static 'college/syllabus/fyit.pdf' %}">FY</a> </li>
+                                    <li> <a href="{% static 'college/syllabus/syit.pdf' %}">SY</a> </li>
+                                    <li> <a href="{% static 'college/syllabus/tyit.pdf' %}">TY</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--collaspe3-->
+                    <div class="card" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" style="color: black;">
+                                    B.Sc. (computer science)
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="ml-4">
+                                    <li> <a href="{% static 'college/syllabus/fycs.pdf' %}"">FY</a> </li>
+                                    <li> <a href="{% static 'college/syllabus/sycs.pdf' %}"">SY</a> </li>
+                                    <li> <a href="{% static 'college/syllabus/tycs.pdf' %}">TY</a> </li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--collaspe4-->
+                    <div class="card" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseFour">
+                        <div class="card-header" id="headingfour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" style="color: black;">
+                                    B.Sc. (Biotechnology)
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingfour"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="ml-4">
+                                    <li> <a href="">FY</a> </li>
+                                    <li> <a href="">SY</a> </li>
+                                    <li> <a href="">TY</a> </li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- commerce -->
+            <div class="col-md-4">
+                <h3 class="m-3">COMMERECE</h3>
+                <div id="com">
+                    <!--collaspe1-->
+                    <div class="card" data-toggle="collapse" data-target="#collapse1" aria-expanded="true"
+                        aria-controls="collapse1">
+                        <div class="card-header" id="comOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" style="color: black;">
+                                    B.Com. (General)
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapse1" class="collapse hide" aria-labelledby="comOne"
+                            data-parent="#com">
+                            <div class="card-body">
+                                <ul class="ml-4">
+                                    <li> <a href="">FY</a> </li>
+                                    <li> <a href="">SY</a> </li>
+                                    <li> <a href="">TY</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--collaspe2-->
+                    <div class="card" data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
+                        aria-controls="collapse2">
+                        <div class="card-header" id="comTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" style="color: black;">
+                                    B.Com. ( Accounting & Finance)
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse2" class="collapse" aria-labelledby="comTwo" data-parent="#com">
+                            <div class="card-body">
+                                <ul class="ml-4">
+                                    <li> <a href="">FY</a> </li>
+                                    <li> <a href="">SY</a> </li>
+                                    <li> <a href="">TY</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--collaspe3-->
+                    <div class="card" data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+                        aria-controls="collapse3">
+                        <div class="card-header" id="comThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" style="color: black;">
+                                    B.M.S. (Bachelor of Management Studies)
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse3" class="collapse" aria-labelledby="comThree"
+                            data-parent="#com">
+                            <div class="card-body">
+                                <ul class="ml-4">
+                                    <li> <a href="">FY</a> </li>
+                                    <li> <a href="">SY</a> </li>
+                                    <li> <a href="">TY</a> </li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- arts -->
+            <div class="col-md-4">
+
+                    <h3 class="m-3">Arts</h3>
+                <div id="arts">
+                    <!--collaspe1-->
+                    <div class="card" data-toggle="collapse" data-target="#artscollapse1" aria-expanded="true"
+                        aria-controls="artscollapse1">
+                        <div class="card-header" id="artsOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" style="color: black;">
+                                    B.A.
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="artscollapse1" class="collapse hide" aria-labelledby="artsOne"
+                            data-parent="#arts">
+                            <div class="card-body">
+                                <ul class="ml-4">
+                                    <li> <a href="">FY</a> </li>
+                                    <li> <a href="">SY</a> </li>
+                                    <li> <a href="">TY</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends 'college/base.html' %}
+
+{% block title %}
+HOME | VIDYA VIKAS COLLEGE OF ARTS , SCIENCE AND COMMERECE
+{% endblock %}
+
+
+{% block content %}
+  {% load static %}
+  <!--start section1/image silder-->
+  <section id="image-slider">
+    <div id="imageslider" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#imageslider" data-slide-to="0" class="active"></li>
+        <li data-target="#imageslider" data-slide-to="1"></li>
+        <li data-target="#imageslider" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner container-fluid">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{% static 'college/images/welcome_vikas_college.jpg' %}" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 " src="{% static 'college/images/vikas_college_inside.jpg' %}" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'college/images/vikas_college_inside(1).jpg' %}" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#imageslider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#imageslider" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <!--end section1/image silder-->
+
+  <!--start section2/contain-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 contain">
+          <h4>WELCOME TO VIKAS COLLEGE</h4>
+          <div class="container-image">
+            <img class="img-fluid img-thumbnail" src="{% static 'college/images/vikas_college_logo.png' %}">
+          </div>
+          <h5>Vidya Vikas Education Society’s Vikas College of Arts, Science and
+            Commerce affiliated to the University of Mumbai was started in 1986, located in Vikhroli,
+            a central suburb of Mumbai.</h5>
+          <h5>
+            The premises covers an area of about 64,000 sq.ft, well occupied with
+            classrooms, library, gymkhana, computer laboratory, office, different
+            departments of Arts, Science and Commerce, canteen facility, science
+            laboratories, and well developed sports grounds.
+            The college has been awarded A Grade by National Assessment and Accreditation
+            Council (NAAC), Bangalore, in February 2017. The college functions throughout
+            the day from 7.00 am to 5.00 pm and at night from 5.00 pm to 10.00 pm
+            including administrative work. Various undergraduate and
+            postgraduate programmes are conducted by different departments.
+            <a href="/aboutus">
+              READ MORE...
+            </a>
+          </h5>
+        </div>
+        <div class="col-lg-3" >
+            <h4>News</h4>
+          {% for i in update|slice:"0:" %}
+          <div style="color: #1565C0; margin-top: 30px; margin-bottom: 25px; font-size: 20px;">
+            {{i.news}}
+          </div>
+          {% endfor%}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end section2/contain-->
+<!-- section3 -->
+<section>
+  <div class="container p-3 ">
+    <div class="row">
+      <div class="col contain1">
+        <h4 style="color: darkolivegreen;">Course</h4>
+        <div class="card-deck">
+          <div class="card border-dark">
+            <h5 class="card-header homecard">UNDER GRADUATE</h5>
+            <div class="card-body">
+              <ul class="pl-4">
+                <li>
+                  Science
+                </li>
+                <li>
+                  Commerce
+                </li>
+                <li>
+                  Arts
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card border-dark">
+            <h5 class="card-header homecard ">POST GRADUATE</h5>
+            <div class="card-body">
+              <ul class="pl-4">
+                <li>
+                  Science
+                </li>
+                <li>
+                  Commerce
+                </li>
+                <li>
+                  Arts
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card border-dark">
+            <h5 class="card-header homecard">DISTANCE EDUCATION</h5>
+            <div class="card-body">
+              <ul class="pl-4">
+                <li>
+                  YCMOU
+                </li>
+                <li>
+                  	TMU
+                </li>
+                <li>
+                  PTU
+                </li>
+                <li>
+                  ALAGAPPA
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

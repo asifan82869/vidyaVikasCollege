@@ -1,0 +1,58 @@
+{% extends 'college/base.html' %}
+
+
+{% block title %}
+NSS | VIDYA VIKAS COLLEGE OF ARTS , SCIENCE AND COMMERECE
+{% endblock %}
+
+
+
+{% block content %}
+{% load static %}
+<section>
+    <div class="container">
+        <div class="row p-2 m-2">
+            <div class="col text-center">
+                <img src="{% static 'college/images/nss_logo.png' %}" alt="logo">
+                <h1>Vikas College NSS UNIT</h1>
+                <p style="font-size: 20px;">The <b> National Service Scheme (NSS)</b> is an Indian government-sponsored
+                    public service program <b>conducted by the Ministry of Youth Affairs and Sports
+                        of the Government of India</b>. Popularly known as <b>NSS</b>. </p>
+                <p style="font-size: 20px;"> At Vikas College of Arts, Science and Commerce
+                    NSS started in 2000 </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row p-2 m-2 mb-3">
+            {% for i in img|slice:"0:" %}
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="mt-3 shadow zoom">
+                    <div>
+                        <img class="img-fluid event" src="/media/{{i.images}}" alt="{{i.images}}">
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="row p-2 m-3">
+            <div class="col">
+                <div style="float: right;">
+                    <a href="https://www.facebook.com/VikasCollegeNSSUnit/"><i class="fab fa-facebook fa-3x"></i></a>
+                    <a href="https://www.instagram.com/nss_unit_2019_20/" class="m-5"><i class="fab fa-instagram fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

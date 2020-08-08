@@ -1,0 +1,421 @@
+/* the * symboll is universal symboll it show defualt css that gives defualt */
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* header style */
+#top-header{
+    color:black;
+    border-bottom:1px solid #ebebeb ;
+    font-size: 0.85rem; /* 1rem = 16px */
+}
+.container-fluid{
+    padding: 0;
+}
+nav ul li a{
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+/* footer style */
+.footer{
+    background-color: black;
+    color: white;
+    
+}
+/* image slider */
+#image-slider{
+    padding: 25px;
+}
+#image-slider img{
+    height: 350px;
+}
+
+.homecard{
+    background-color: #557545;
+    color: white;
+    }
+
+/* contain */
+#container{
+    padding: 25px; /* section */
+}
+.contain h4{
+    color: #557545; /* <h4> */
+}
+.contain1 h4{
+    color: #557545;
+}
+.contain {
+    width: 530px;
+    margin: 15px;
+    text-align: justify;
+    line-height: 2px;
+    float: right;
+}
+.container-image {
+    margin: 15px;
+    float: left;
+}
+.side-contain{
+    border: solid black 2px;
+    margin-bottom: 25px;
+
+}
+/*contact Us*/
+.address p{
+    font-weight: 600;
+}
+.form-section{
+    padding: 3%;
+}
+
+/*about us*/
+.aboutustop{
+    margin-top: 50px;
+}
+
+.aboutusdottom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.innerfounder img{
+    transition: all 1.5 ease;
+}
+.innerfounder:hover{
+    transform: scale(1.8);
+}
+
+/*staff*/
+.inner img{
+    transition: all 1.5 ease;
+}
+.inner:hover img{
+    transform: scale(1.8);
+}
+.containstaff {
+    color: #65ad41;
+}
+
+/*gallery*/
+.carousel-control-prev
+.carousel-control-next {
+    height: 30%;
+}
+.contgallery{
+    margin: 4px;
+}
+
+/*test*/
+.coltest{
+    display: inline-block;
+}
+
+
+/* library */
+#lib-image-slider{
+    padding: 25px;
+}
+#lib-image-slider img{
+    height: 350px;
+}
+.libcss{
+    background-color: #557545;
+    color: white;
+}
+.libtext{
+    font-size: smaller;
+}
+/* the * symboll is universal symboll it show defualt css that gives defualt */
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* header style */
+#top-header{
+    color:black;
+    border-bottom:1px solid #ebebeb ;
+    font-size: 0.85rem; /* 1rem = 16px */
+}
+.container-fluid{
+    padding: 0;
+}
+nav ul li a{
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+/* footer style */
+.footer{
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+}
+/* image slider */
+#image-slider{
+    padding: 25px;
+}
+#image-slider img{
+    height: 350px;
+}
+
+.homecard{
+    background-color: #557545;
+    color: white;
+    }
+
+/* contain */
+#container{
+    padding: 25px; /* section */
+}
+.contain h4{
+    color: #557545; /* <h4> */
+}
+.contain1 h4{
+    color: #557545;
+}
+.contain {
+    width: 530px;
+    margin: 15px;
+    text-align: justify;
+    line-height: 2px;
+    float: right;
+}
+.container-image {
+    margin: 15px;
+    float: left;
+}
+.side-contain{
+    border: solid black 2px;
+    margin-bottom: 25px;
+
+}
+/*contact Us*/
+.address p{
+    font-weight: 600;
+}
+.form-section{
+    padding: 3%;
+}
+
+/*about us*/
+.aboutustop{
+    margin-top: 50px;
+}
+
+.aboutusdottom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.innerfounder img{
+    transition: all 1.5 ease;
+}
+.innerfounder:hover{
+    transform: scale(1.8);
+}
+
+/*staff*/
+.inner img{
+    transition: all 1.5 ease;
+}
+.inner:hover img{
+    transform: scale(1.8);
+}
+.containstaff {
+    color: #65ad41;
+}
+
+/*gallery*/
+.carousel-control-prev
+.carousel-control-next {
+    height: 30%;
+}
+.contgallery{
+    margin: 4px;
+}
+
+/*test*/
+.coltest{
+    display: inline-block;
+}
+
+
+/* library */
+#lib-image-slider{
+    padding: 25px;
+}
+#lib-image-slider img{
+    height: 350px;
+}
+.libcss{
+    background-color: #557545;
+    color: white;
+}
+.libtext{
+    font-size: smaller;
+}
+/* the * symboll is universal symboll it show defualt css that gives defualt */
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* header style */
+#top-header{
+    color:black;
+    border-bottom:1px solid #ebebeb ;
+    font-size: 0.85rem; /* 1rem = 16px */
+}
+.container-fluid{
+    padding: 0;
+}
+nav ul li a{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.home-icon{
+    font-size: 2rem;
+}
+/* footer style */
+.footer{
+    background-color:black;
+    color: white;
+    font-size: 1rem;
+}
+/* image slider */
+#image-slider{
+    padding: 25px;
+}
+#image-slider img{
+    height: 350px;
+}
+
+.homecard{
+    background-color: #557545;
+    color: white;
+    }
+
+/* contain */
+#container{
+    padding: 25px; /* section */
+}
+.contain h4{
+    color: #557545; /* <h4> */
+}
+.contain1 h4{
+    color: #557545;
+}
+.contain {
+    width: 530px;
+    margin: 15px;
+    text-align: justify;
+    line-height: 2px;
+    float: right;
+}
+.container-image {
+    margin: 15px;
+    float: left;
+}
+/*.side-contain{
+    border: solid black 2px;
+    margin-bottom: 25px;
+
+}*/
+/*contact Us*/
+.address p{
+    font-weight: 600;
+}
+.form-section{
+    padding: 3%;
+}
+
+/*about us*/
+.aboutustop{
+    margin-top: 50px;
+}
+
+.aboutusdottom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.innerfounder img{
+    transition: all 1.5 ease;
+}
+.innerfounder:hover{
+    transform: scale(1.8);
+}
+
+/*staff*/
+.inner img{
+    transition: all 1.5 ease;
+}
+.inner:hover img{
+    transform: scale(1.8);
+}
+.containstaff {
+    color: #65ad41;
+}
+.description{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #2ca1f0;
+}
+
+/*gallery*/
+.carousel-control-prev
+.carousel-control-next {
+    height: 30%;
+}
+.contgallery{
+    margin: 4px;
+}
+
+.zoom {
+    overflow: hidden;
+  }
+
+.zoom img{
+    height:150px;
+    width:100%;
+    transition: transform .2s ease;
+}
+
+.zoom:hover img{
+  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+/* library */
+#lib-image-slider{
+    padding: 25px;
+}
+#lib-image-slider img{
+    height: 350px;
+}
+.libcss{
+    background-color: #557545;
+    color: white;
+}
+.libtext{
+    font-size: medium;
+}
+.event{
+    height: 200px;
+    width: 450px;
+}
+/*admission page*/
+.admission-container{
+    border-radius: 20px 20px 20px 20px;
+    background-color:#3498db;
+}
+.text-admission{
+    color: white;
+    display: inline-block;
+}
+.text-admission a{
+    width: 250px;
+}
+
+
+/* form */
+.button{
+    width: 18%;
+}

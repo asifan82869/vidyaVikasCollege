@@ -1,0 +1,38 @@
+{% extends 'college/base.html' %}
+
+
+{% block title %}
+Staff | VIDYA VIKAS COLLEGE OF ARTS , SCIENCE AND COMMERECE
+{% endblock %}
+
+
+
+{% block content %}
+<section class="staff" style="text-align: center;">
+    <div class="container p-3">
+        <h1 class="containstaff">{{header}}</h1>
+        <p class="description">{{desc}}</p>
+        <div class="row">
+
+            {% for i in staff|slice:"0:" %}
+            {% if i.depatment == dept %}
+            <div class="col-lg-3 col-md-3 col-sm-3 card-group">
+                <div class="card mt-3 shadow">
+                    <div class="inner">
+                        <img class="img-fluid rounded-circle" style=" height: 200px; padding: 10px; width: 200px;"
+                            src="/media/{{i.photo}}" alt="{{i.staff_name}}">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{i.staff_name}}</h5>
+                        <p class="card-text">Post : {{i.post}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

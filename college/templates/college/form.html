@@ -1,0 +1,470 @@
+{% extends 'college/base.html' %}
+
+{% block title %}
+{{year}} addmission form | VIDYA VIKAS COLLEGE OF ARTS , SCIENCE AND COMMERECE
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<!-- rule of online admission form -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center m-5 ">Online Admission page</h1>
+                <h4>Instruction for online Admission Form</h4>
+                <ol class="m-3">
+                    <li>Fill all the details corrct</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- online admission form -->
+<section>
+    <div class="container p-5">
+        <div class="form-group">
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages%}
+                    <div class="alert alert-success" role="alert">
+                        <li class="m-3">
+                        {{message}}
+                        </li>
+                    </div>
+                {%endfor%}
+            </ul>
+            {% endif %}
+
+        </div>
+        <form class="border border-secondary post-form needs-validation" action="" method="POST" enctype="multipart/form-data" novalidate>
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-md-8 text-center m-3">
+                    <img src="{% static 'college/images/vikas_college_logo.png' %}" alt="College logo"
+                        style="height: 50%;">
+                    <h4>VIDYA VIKAS COLLEGE OF ARTS, SCIENCE AND COMMERECE</h4>
+                    <h6>khannamwar nagar, mumbai 400083</h6>
+                    <h3>{{year}} Online Admission Form</h3>
+                </div>
+                <div class="col-md-2 m-5">
+                    <label class="font-weight-bold">upload your photo for profile </label>
+                    {{ form.image }}
+                    <div class="text-danger">
+                        {{ form.image.errors }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row m-3">
+                <div class="form-group col-md-4">
+                    <label for="fname">First Name</label>
+                    {{ form.first_name }}
+                    <div class="text-danger">
+                        {{ form.first_name.errors }}
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="mname">Middle Name</label>
+                    {{ form.middle_name }}
+                    <div class="text-danger">
+                        {{ form.middle_name.errors }}
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="lname">Last Name</label>
+                    {{ form.last_name }}
+                    <div class="text-danger">
+                        {{ form.last_name.errors }}
+                    </div>
+                </div>
+            </div>
+            <hr class="m-3">
+
+            <div class="form-row m-3">
+                <div class="form-group col-md-4">
+                    <label for="mfname">Mother First Name</label>
+                    {{ form.mother_frist_name }}
+                    <div class="text-danger">
+                        {{ form.mother_frist_name.errors }}
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="mmname">Mother Middle Name</label>
+                    {{ form.mother_middle_name }}
+                    <div class="text-danger">
+                        {{ form.mother_middle_name.errors }}
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="mlname">Mother Last Name</label>
+                    {{ form.mother_last_name }}
+                    <div class="text-danger">
+                        {{ form.mother_last_name.errors }}
+                    </div>
+                </div>
+            </div>
+            <hr class="m-3">
+
+            <div class="row form-group m-3">
+                <div class="col-md-2">
+                    <legend class="col-form-label pt-0">Gender</legend>
+                    {{ form.gender }}
+                    <div class="text-danger">
+                        {{ form.gender.errors }}
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <legend class="col-form-label pt-0">Status</legend>
+                    {{ form.status }}
+                    <div class="text-danger">
+                        {{ form.status.errors }}
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <legend class="col-form-label pt-0">Stream</legend>
+                    {{form.stream}}
+                    <div class="text-danger">
+                        {{ form.stream.errors }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="inputDate">Birth of date</label>
+                        {{form.date_of_brith}}
+                        <div class="text-danger">
+                            {{ form.date_of_brith.errors }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="m-3">
+
+            <div class="form-group m-3 row">
+                <div class="col-md-4">
+                    <label for="email">Email</label>
+                    {{form.email}}
+                    <div class="text-danger">
+                        {{ form.email.errors }}
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="phone">Phone Number</label>
+                    {{form.phone1}}
+                    <div class="text-danger">
+                        {{ form.phone1.errors }}
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="phone2">Phone Number</label>
+                    {{form.phone2}}
+                    <div class="text-danger">
+                        {{ form.phone2.errors }}
+                    </div>
+                </div>
+            </div>
+            <hr class="m-3">
+
+            <div class="form-group m-3">
+                <label for="inputAddress">Address</label>
+                {{form.current_address}}
+                <div class="text-danger">
+                    {{ form.current_address.errors }}
+                </div>
+            </div>
+            <div class="form-row m-3">
+                <div class="form-group col-md-6">
+                    <label for="inputCity1">City</label>
+                    {{form.current_city}}
+                    <div class="text-danger">
+                        {{ form.current_city.errors }}
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState1">State</label>
+                    {{form.current_state}}
+                    <div class="text-danger">
+                        {{ form.current_state.errors }}
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip1">Zip</label>
+                    {{form.current_zip}}
+                    <div class="text-danger">
+                        {{ form.current_zip.errors }}
+                    </div>
+                </div>
+            </div>
+            <hr class="m-3">
+
+            <div class="form-group m-3">
+                <label for="inputAddress2">Address</label>
+                {{form.permanent_address}}
+                <div class="text-danger">
+                    {{ form.permanent_address.errors }}
+                </div>
+            </div>
+            <div class="form-row m-3">
+                <div class="form-group col-md-6">
+                    <label for="inputCity2">City</label>
+                    {{form.permanent_city}}
+                    <div class="text-danger">
+                        {{ form.permanent_city.errors }}
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState2">State</label>
+                    {{form.permanent_state}}
+                    <div class="text-danger">
+                        {{ form.permanent_state.errors }}
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip2">Zip</label>
+                    {{form.permanent_zip}}
+                    <div class="text-danger">
+                        {{ form.permanent_zip.errors }}
+                    </div>
+                </div>
+            </div>
+            <hr class="m-3">
+
+            <div class="form-row m-3">
+                <table class="table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Education</th>
+                            <th scope="col">School/College Name</th>
+                            <th scope="col">Borad State</th>
+                            <th scope="col">% / CGP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">SSC</th>
+                            <td>
+                                <div class="form-group">
+                                    {{form.ssc_school_name}}
+                                    <div class="text-danger">
+                                        {{ form.ssc_school_name.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    {{form.ssc_borad_state}}
+                                    <div class="text-danger">
+                                        {{ form.ssc_borad_state.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    {{form.ssc_parcentage}}
+                                    <div class="text-danger">
+                                        {{ form.ssc_parcentage.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">HSC</th>
+                            <td>
+                                <div class="form-group">
+                                    {{form.hsc_school_name}}
+                                    <div class="text-danger">
+                                        {{ form.hsc_school_name.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    {{form.hsc_borad_state}}
+                                    <div class="text-danger">
+                                        {{ form.hsc_borad_state.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    {{form.hsc_parcentage}}
+                                    <div class="text-danger">
+                                        {{ form.hsc_parcentage.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        {% if year == 'SY' or year == 'TY' %}
+                        <tr>
+                            <th scope="row">SEM 1</th>
+                            <td>
+                                <div class="form-group">
+                                    {{form.sem1_college_name}}
+                                    <div class="text-danger">
+                                        {{ form.sem1_college_name.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    {{form.sem1_university_name}}
+                                    <div class="text-danger">
+                                        {{ form.sem1_university_name.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    {{form.sem1_pointer}}
+                                    <div class="text-danger">
+                                        {{ form.sem1_pointer.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">SEM 2</th>
+                            <td>
+                                <div class="form-group">
+                                    {{form.sem2_college_name}}
+                                    <div class="text-danger">
+                                        {{ form.sem2_college_name.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    {{form.sem2_university_name}}
+                                    <div class="text-danger">
+                                        {{ form.sem2_university_name.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    {{form.sem2_pointer}}
+                                    <div class="text-danger">
+                                        {{ form.sem2_pointer.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endif %}
+                        {% if year == 'TY' %}
+                        <tr>
+                            <th scope="row">SEM 3</th>
+                            <td>
+                                <div class="form-group">
+                                    {{form.sem3_college_name}}
+                                    <div class="text-danger">
+                                        {{ form.sem3_college_name.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    {{form.sem3_university_name}}
+                                    <div class="text-danger">
+                                        {{ form.sem3_university_name.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    {{form.sem3_pointer}}
+                                    <div class="text-danger">
+                                        {{ form.sem3_pointer.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">SEM 4</th>
+                            <td>
+                                <div class="form-group">
+                                    {{form.sem4_college_name}}
+                                    <div class="text-danger">
+                                        {{ form.sem4_college_name.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    {{form.sem4_university_name}}
+                                    <div class="text-danger">
+                                        {{ form.sem4_university_name.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    {{form.sem4_pointer}}
+                                    <div class="text-danger">
+                                        {{ form.sem4_pointer.errors }}
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            </div>
+            <hr class="m-3">
+
+            <div class="form-row m-3">
+                <div class="form-group col-md-2">
+                    <label>SSC Result</label>
+                    {{form.ssc_result}}
+                    <div class="text-danger">
+                        {{ form.ssc_result.errors }}
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <label>HSC Result</label>
+                    {{form.hsc_result}}
+                    <div class="text-danger">
+                        {{ form.hsc_result.errors }}
+                    </div>
+                </div>
+                {% if year == 'SY' or year == 'TY' %}
+                <div class="form-group col-md-2">
+                    <label>sem1 Result</label>
+                    {{form.sem1_result}}
+                    <div class="text-danger">
+                        {{ form.sem1_result.errors }}
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <label>sem2 Result</label>
+                    {{form.sem2_result}}
+                    <div class="text-danger">
+                        {{ form.sem2_result.errors }}
+                    </div>
+                </div>
+                {% endif %}
+                {% if year == 'TY' %}
+                <div class="form-group col-md-2">
+                    <label>sem3 Result</label>
+                    {{form.sem3_result}}
+                    <div class="text-danger">
+                        {{ form.sem3_result.errors }}
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <label>sem4 Result</label>
+                    {{form.sem4_result}}
+                    <div class="text-danger">
+                        {{ form.sem4_result.errors }}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+
+            <button type="submit" class="btn btn-success m-3 button">Submit</button>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

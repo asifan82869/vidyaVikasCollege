@@ -1,0 +1,128 @@
+{% extends 'college/base.html' %}
+
+
+{% block title %}
+ABOUT US | VIDYA VIKAS COLLEGE OF ARTS , SCIENCE AND COMMERECE
+{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<!--start section1/about college-->
+<section>
+  <div class="container aboutustop">
+    <div class="row">
+      <div class="col-12 text-justify">
+        <h4 style="text-align: center; color: darkolivegreen; font-size: 2rem;">WELCOME TO VIKAS COLLEGE</h4>
+        <div class="container-image mt-5">
+          <img class="img-fluid" src="{% static 'college/images/vikas_college_logo.png' %}">
+        </div>
+        <p class="mt-5 text">Vidya Vikas Education Society’s Vikas College of Arts, Science and
+          Commerce affiliated to the University of Mumbai was started in 1986, located in Vikhroli,
+          a central suburb of Mumbai.
+          <br>
+          The premises covers an area of about 64,000 sq.ft, well occupied with
+          classrooms, library, gymkhana, computer laboratory, office, different
+          departments of Arts, Science and Commerce, canteen facility, science
+          laboratories, and well developed sports grounds.
+          The college has been awarded A Grade by National Assessment and Accreditation
+          Council (NAAC), Bangalore, in February 2017. The college functions throughout
+          the day from 7.00 am to 5.00 pm and at night from 5.00 pm to 10.00 pm
+          including administrative work. Various undergraduate and
+          postgraduate programmes are conducted by different departments.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--end section1/about college-->
+
+<!--start section2/history of college-->
+<section>
+  <div class="container text-justify p-3">
+    <div class="row">
+      <div class="col-12">
+        <h4 style="color: darkolivegreen;">HISTORY OF VVES</h4>
+        <p class="text">
+          Education being the basic need of the society, Vidya Vikas Education Society was founded
+          with the goal of providing need- based education to the poor sections of society.
+        </p>
+        <p class="text">
+          With only one room on rental basis as the only infrastructure, the first night school was started at
+          Pantnagar, Ghatkopar in 1963. Considering the needs of expansion in 1969, the institution succeeded in
+          getting twelve rooms on rental basis from Maharashtra Housing Board at Kannamwar Nagar, Vikhroli.
+          Beginning with this, facing a number of difficulties, with a great determination and persistent efforts,
+          Vidya Vikas Education Society continued its journey towards progress and there was no looking back.
+        </p>
+        <p class="text">
+          It was in 1974 that after a long process of reclaiming the waste land in Kannamwar Nagar, Vikhroli,
+          the foundation was laid for the present building of the institution.
+          Planted in one room at Pantnagar, Ghatkopar, this tree of Knowledge has grown up with the following
+          24 branches of education.
+        </p>
+        <p class="text">
+          With an objective of holding light to those in darkness and extending support to helpless and guide
+          those who have lost direction, our kind hearted, socially concerned and dedicated reformers laid down
+          the foundation of Vidya Vikas Education Society in 1962, to impart higher education to the masses,
+          especially,the weaker and underprivileged sections of society. Late Dr. W.S. Matkar, Ex. MLA.,
+          Maharashtra State, Late Dr. Datta Samant, Renowned Trade Unionist and Ex. MP, Union of India and
+          Shri P.M. Raut, Recipient of the National Award for Teaching and present secretary of the institution
+          are the founder members of the institution. The institution could reach a remarkable milestone in the
+          field of education in a very short span of time. Started with an initial strength of 260students, it
+          has now grown up both qualitatively & quantitatively in to 19 educational units imparting knowledge
+          to more than 15,000 students from KG level to PG level.
+        </p>
+        <p class="text">
+          All the members of Vidya Vikas Education Society family are fortunate to be guided and supported in
+          their mission of education by Shri P.M. Raut, Secretary, Vidya Vikas Education Society and Mrs. Vidya
+          P.Raut, Chief Executive Officer of the institution, both being the recipient of the National Award for
+          Teaching.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--end section2/history of college-->
+
+
+<section>
+  <div class="container p-5">
+    <div class="row">
+      <div class="col-8">
+        <h4 style=" color: darkolivegreen; font-size: 35px;" class="pt-5">OUR VISION</h4>
+        <ul class="pt-3 text">
+          <li>To empower students through focused teaching and research.</li>
+          <li>To Foster a world of joy through sharing and learning.</li>
+          <li>To create and enhance teamwork and leadership qualities.</li>
+          <li>To excel in interaction through the art of communication.</li>
+          <li>To provide extension services to serve self and society.</li>
+        </ul>
+        <h4 style="color: darkolivegreen; font-size: 35px;" class="pt-3">OUR MISSION</h4>
+        <ul class="pt-3 text">
+          <li>Knowledge is all Ambrosia.</li>
+          <li>Academic excellence with character development.</li>
+          <li>Enthusiasm is the propelling force behind our success.</li>
+        </ul>
+      </div>
+      <div class="col-4 text-center">
+        <div class="innerfounder">
+          <img class="img-fluid img-thumbnail shadow" src="{% static 'college/images/Late Dr.Datta Samant.jpg' %}">
+          <p>Late Dr.Datta Samant <br> <b>Ex-MP and Founder Chairman</b></p>
+        </div>
+        
+        <div class="innerfounder">
+          <img class="img-fluid img-thumbnail shadow" src="{% static 'college/images/Late Dr.W.S.Matkar.jpg' %}">
+          <p>Late Dr.W.S.Matkar <br> <b>Ex-M.L.A. and Founder Trustee</b></p>
+        </div>
+        
+        <div class="innerfounder">
+          <img class="img-fluid img-thumbnail shadow" src="{% static 'college/images/Shri.P.M.Raut.jpg' %}">
+          <p>Shri.P.M.Raut <br> <b>Founder Secretary</b></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

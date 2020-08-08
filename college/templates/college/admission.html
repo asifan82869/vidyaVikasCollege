@@ -1,0 +1,125 @@
+{% extends 'college/base.html' %}
+
+{% block title %}
+HOME | VIDYA VIKAS COLLEGE OF ARTS , SCIENCE AND COMMERECE
+{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<!-- what college provide -->
+<section>
+  <div class="container p-3 text">
+    <h4 class="m-3 p-3">DOCUMENTS & CERTIFICATES</h4>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>A. Documents issued by the college office</h5>
+        <ol class="m-3 text-justify">
+          <li class="mt-3">
+            <b>Bonafide Certificate</b>
+            <p class="mt-3">
+              Students who are admitted to the Junior or Degree College are
+              eligible to get a bonafide certificate on application and payment of Rs.10/-
+              (Rupees Ten only.)
+            </p>
+          </li>
+          <li>
+            <b>Railway Concession</b>
+            <p class="mt-3">
+              Only bonafide students of the college for the academic year (male students
+              below 25 years and all lady students) are eligible for Railway concession for
+              their season tickets between the stations nearest to their home and Ghatkopar.
+              The student has to apply in a prescribed form of application available at the
+              college office between 9.30 a.m.to 1.00 p.m. on any working day. Long Journey
+              Railway Concession is granted only for the vacation period according to rules
+              of the Railways for commuting to their native places as mentioned in their
+              admission forms.
+            </p>
+          </li>
+          <li>
+            <b>College Examination Marksheets</b>
+            <P class="mt-3">
+              Students of First and Second year Degree College will be issued marksheets
+              for Semester I, II, III and IV examinations as per credit system.
+            </P>
+          </li>
+          <li>
+            <b>College Leaving Certificate</b>
+            <P class="mt-3">
+              Students who have passed XIIth standard examination will be issued a
+              college leaving certificate.
+            </P>
+          </li>
+        </ol>
+      </div>
+      <div class="col-md-6">
+        <h5>B. Documents to be submitted by the student</h5>
+        <ol class="m-3 text-justify">
+          <li class="mt-3">
+            <b>Provisional Eligibility</b>
+            <p class="mt-3">
+              A student from another University or Board of Secondary or
+              Intermediate Education or any other statutory examining body,
+              seeking admission to this University/College shall apply to the
+              Registrar, University of Mumbai for a certificate of eligibility.
+              Such students will not be admitted to any class, if they have not
+              obtained the provisional certificate of Eligibility from the Registrar,
+              University of Mumbai.
+            </p>
+            <p>
+              After being admitted to the college on the basis of the provisional eligibility
+              certificate, the students have to obtain final confirmation and eligibility for
+              wh they wilichl be required to submit the following certificates in original along
+              with a certified xerox copy.
+            </p>
+            <ul class="m-3">
+              <li>Original Mark Sheet</li>
+              <li>Original Passing Certificate</li>
+              <li>Original Migration Certificate.</li>
+            </ul>
+            <p>
+              The student also can submit a Online Admission Form
+            </p>
+          </li>
+          <li>
+            <b>Caste Certificate for Validation</b>
+            <p class="mt-3">
+              It is applicable only to students belonging to S.C/S.T. /V.J./N.T./O.B.C. /S.B.C./Nav
+              Buddha who wish to take admission in professional colleges after passing H.S.C.
+              examination. For the validation of the above certificates, the student has to
+              submit original caste certificate along with two attested xerox copies and a
+              copy of caste certificate of any of his/her close relative and attested Xerox
+              copy of first and last page of ration-card on or before 15th October 2011.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- lable of admission form -->
+<section>
+  <div class="container p-3 mb-5 admission-container">
+    <div class="row">
+      <div class="col-md-4 text-admission justify-content-between">
+        <h3 class="m-3">FY Online Admission Form </h3>
+        <div class="m-3">
+          <a class="btn btn-outline-dark my-2 my-sm-0" href="/fyform" role="button">Here</a>
+        </div>
+      </div>
+      <div class="col-md-4 text-admission justify-content-between">
+        <h3 class="m-3">SY Online Admission Form </h3>
+        <div class="m-3">
+          <a class="btn btn-outline-dark my-2 my-sm-0" href="/syform" role="button">Here</a>
+        </div>
+      </div>
+      <div class="col-md-4 text-admission justify-content-between">
+        <h3 class="m-3">TY Online Admission Form </h3>
+        <div class="m-3">
+          <a class="btn btn-outline-dark my-2 my-sm-0" href="/tyform" role="button">Here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

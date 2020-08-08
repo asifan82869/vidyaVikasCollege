@@ -1,0 +1,90 @@
+{% extends 'college/base.html' %}
+
+
+{% block title %}
+CONTACT US | VIDYA VIKAS COLLEGE OF ARTS , SCIENCE AND COMMERECE
+{% endblock %}
+
+{% block content %}
+
+  <section class="form-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 pt-2 form">
+          <form action="/contactus/" method="post"> {% csrf_token %}
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                  <input type="text" class="form-control" name="name" placeholder="Name" required>
+                </div>
+               
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <input type="email" class="form-control" name="email" placeholder="email" required>
+                 </div>
+            </div> 
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                  <input type="text" class="form-control" name="phone" placeholder="Contact Number" required>
+                </div>
+            </div> 
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                  <textarea name="comment" class="form-control" rows="3" placeholder="Comments" required></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12 text-center" role="alert">
+                  <button type="submit" class="btn btn-primary" >
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                  </button>
+                </div>
+            </div>  
+          </form>
+        </div>
+        <div class="col-md-6 pt-2 address">
+          <h5> Call Us </h5>
+          <p><a href="tel:+9100000000"> 
+          <i class="fas fa-phone"></i>
+          (022) - 25783540 <br/>
+          <i class="fas fa-phone"></i>
+          (022) - 25784267  
+          </a></p>
+          <h5> Info Email </h5>
+          <p><a href="mailto:info@vikascollege.org">
+            <i class="fas fa-envelope"></i> 
+            info@vikascollege.org
+          </a><br/>
+          <a href="http://www.vikascollege.org">
+            <i class="fas fa-globe"></i>
+            http://www.vikascollege.org
+          </a></p>
+  
+          <h5>Working hours</h5>
+          <p>
+            Mon - Fri : 9am - 6pm 
+          </p>
+          <h5>Address</h5>
+          <p>
+            Kannamwar Nagar - 2, Vikhroli (East),<br/>
+            Mumbai - 400 083,  Maharashtra, India.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> 
+   
+  <section>
+    <div class="container-fluid">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.750943767578!2d72.93679841421341!3d19.11857895560251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c79bcfffffff%3A0x9a668ebd44f72ba!2sVikas%20College%20of%20Arts%20Science%20and%20Commerce!5e0!3m2!1sen!2sin!4v1573403710851!5m2!1sen!2sin" 
+        width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+  </section>
+  
+{% endblock %}
